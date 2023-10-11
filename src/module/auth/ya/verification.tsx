@@ -6,11 +6,7 @@ import {useEffect, useState} from "react";
 
 function AuthVerification (p :backendSettings) {
     const [appState, setAppState] = useState<tokenBearer>();
-    const [info, setInfo] = useState('');
-
-    const authorize = (token :tokenBearer) => {
-        setAppState(token)
-    }
+    const [info] = useState('');
 
     useEffect(() => {
         const queryParams = new URLSearchParams(window.location.search)
