@@ -37,29 +37,31 @@ const apiSettings :backendSettings = {
 }
 
 ReactDOM.render(
-    <Provider store={store}>
-        <ConnectedRouter history={history}>
-            <>
-                <Switch>
-                    <Route exact path={appSettings?.basePath + "/verification/ya"}>
-                        <React.StrictMode>
-                            <AuthVerification {...apiSettings} />
-                        </React.StrictMode>
-                    </Route>
-                    <Route exact path={appSettings?.basePath + "/login"}>
-                        <React.StrictMode>
-                            <Login {...apiSettings} />
-                        </React.StrictMode>
-                    </Route>
-                    <RoutePrivate exact path={appSettings?.basePath} appSettings={appSettings}>
-                        <React.StrictMode>
-                            <App {...apiSettings} />
-                        </React.StrictMode>
-                    </RoutePrivate>
-                    <Route component={Error} />
-                </Switch>
-            </>
-        </ConnectedRouter>
-    </Provider>,
+    // <Provider store={store}>
+    //     <ConnectedRouter history={history}>
+    //         <>
+    //             <Switch>
+    //                 <Route exact path={appSettings?.basePath + "/verification/ya"}>
+    //                     <React.StrictMode>
+    //                         <AuthVerification {...apiSettings} />
+    //                     </React.StrictMode>
+    //                 </Route>
+    //                 <Route exact path={appSettings?.basePath + "/login"}>
+    //                     <React.StrictMode>
+    //                         <Login {...apiSettings} />
+    //                     </React.StrictMode>
+    //                 </Route>
+    //                 <RoutePrivate exact path={appSettings?.basePath} appSettings={appSettings}>
+    //                     <React.StrictMode>
+    //                         <App {...apiSettings} />
+    //                     </React.StrictMode>
+    //                 </RoutePrivate>
+    //                 <Route component={Error} />
+    //             </Switch>
+    //         </>
+    //     </ConnectedRouter>
+    // </Provider>,
+    <>
+    </>,
     document.getElementById('root')
 );
