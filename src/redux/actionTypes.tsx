@@ -1,4 +1,0 @@
-const AUTHORIZE = 'AUTHORIZE'
-const LOGOUT = 'LOGOUT'
-
-export {AUTHORIZE, LOGOUT}
