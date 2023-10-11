@@ -29,7 +29,6 @@ jobs:
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: build/pages
-          FOLDER: build
-          CI: true
+          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: build/pages
+          folder: build
