@@ -14,7 +14,7 @@ jobs:
       - name: 🛎️ Checkout repository
         uses: actions/checkout@v3
       - name: Set up Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@releases/v3
         with:
           node-version: ${{ matrix.node-version }}
       - name: Build application
