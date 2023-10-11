@@ -1,0 +1,2 @@
+(this.webpackJsonpnovopokrovskoe=this.webpackJsonpnovopokrovskoe||[]).push([[0],{4:function(o,e,n){"use strict";n.r(e);var t=n(3),r=n.n(t),s=n(0);r.a.render(Object(s.jsx)(s.Fragment,{children:window.location.href}),document.getElementById("root"))}},[[4,1,2]]]);
+//# sourceMappingURL=main.f106d1d8.chunk.js.map
