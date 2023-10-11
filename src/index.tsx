@@ -62,6 +62,7 @@ ReactDOM.render(
     //     </ConnectedRouter>
     // </Provider>,
     <>
+       {window.location.href}
     </>,
     document.getElementById('root')
 );
